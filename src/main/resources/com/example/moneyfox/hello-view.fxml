@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: #F9FBF2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyfox.HelloController">
+   <children>
+   
+          <Label fx:id="welcomeText" alignment="TOP_CENTER" layoutX="411.0" layoutY="64.0" text="MoneyFox" textAlignment="CENTER" textFill="#4f759b" AnchorPane.leftAnchor="420.0" AnchorPane.rightAnchor="420.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="355.0" layoutY="300.0" prefHeight="21.0" prefWidth="390.0" text="Upload the csv file from your bank for 1 month" AnchorPane.bottomAnchor="379.0" AnchorPane.leftAnchor="355.0" AnchorPane.rightAnchor="355.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="chooseFile" contentDisplay="CENTER" layoutX="425.0" layoutY="350.0" mnemonicParsing="false" onAction="#fileChooser" style="-fx-background-color: #4F759B;" text="Upload csv file" textAlignment="CENTER" textFill="#ffede1" AnchorPane.leftAnchor="425.0" AnchorPane.rightAnchor="423.0">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="324.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to MoneyFox the best way to track and find out where your money is going.  With MoneyFox you can upload your monthy bank statments and MoneyFox will ask you some question to get a better understanding of your specific money habbits." textAlignment="CENTER" wrappingWidth="453.0" AnchorPane.leftAnchor="324.0" AnchorPane.rightAnchor="323.0" AnchorPane.topAnchor="79.0" />
+      <Line endX="316.0" layoutX="415.0" layoutY="170.0" startX="-31.0" />
+      <Line endX="316.0" layoutX="407.0" layoutY="58.0" startX="-31.0" />
+   </children>
+</AnchorPane>
